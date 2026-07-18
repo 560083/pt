@@ -6,12 +6,6 @@
     <title>Project & Contact Tracker</title>
     
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest"> 
-
-    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon.svg">
 
     <style>
@@ -299,7 +293,7 @@
 <body>
 
     <header>
-	    <!-- <h1 id="boardTitle">Project Track & Call</h1> -->
+	   <h1 id="boardTitle">Project Track</h1> 
         <div class="controls">
             <select id="filterProject" onchange="renderBoard()">
                 <option value="ALL">All Projects</option>
@@ -455,12 +449,12 @@
             const addBtn = document.getElementById('topAddBtn');
 
             if (viewArchivedMode) {
-                titleEl.textContent = "Archived Project Logs";
+                titleEl.textContent = "Archived Project";
                 toggleBtn.textContent = "View Active Tracker";
                 toggleBtn.classList.add('active');
                 addBtn.style.display = 'none';
             } else {
-                titleEl.textContent = "Project Track & Call";
+                titleEl.textContent = "Project Track";
                 toggleBtn.textContent = "View Archive";
                 toggleBtn.classList.remove('active');
                 addBtn.style.display = 'inline-flex';
